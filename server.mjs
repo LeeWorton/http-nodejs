@@ -1,11 +1,15 @@
-import { createServer } from 'http';
+//import { createServer } from 'http';
 
-createServer((req, res) => {
-  res.write('Hello World!');
-  res.end();
-}).listen(process.env.PORT);
-var https = require('https');
-var forge = require('node-forge');
+//createServer((req, res) => {
+  //res.write('Hello World!');
+  //res.end();
+//}).listen(process.env.PORT);
+
+import { https } from 'https';
+import { forge } from 'node-forge';
+
+//var https = require('https');
+//var forge = require('node-forge');
     forge.options.usePureJavaScript = true; 
 
 var pki = forge.pki;
