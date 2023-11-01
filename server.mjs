@@ -6,7 +6,12 @@
 //}).listen(process.env.PORT);
 
 import { https } from 'https';
-import { forge } from 'node-forge';
+
+
+import pkg from 'node-forge';
+const { forge } = pkg;
+
+
 
 //var https = require('https');
 //var forge = require('node-forge');
